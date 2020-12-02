@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Lista Giornalisti
+{% endblock title %}
+
+{% block content %}
+    <h4>Giornalisti:</h4>
+    {% for gio in giornalista %}
+        <p><strong>Nome:</strong><a href="/news/giornalisti/{{ giornalista.id}}">{{ gio.nome }}</a></p>
+        <p><strong>Cognome: </strong>{{ gio.cognome }}</p>
+       
+        <hr>
+    {% endfor %}
+    
+{% endblock content %}
