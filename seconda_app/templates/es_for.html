@@ -1,3 +1,10 @@
+
+{% extends 'base.html'%}
+{%block title%}
+	{{block.super}} | Chi siamo
+{%endblock title%}
+
+{%block content%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,3 +74,4 @@ Looping over a sequence of items using <b>forloop.counter</b> variable:
 	{% endfor %}
 </body>
 </html>
+{%endblock content%}
